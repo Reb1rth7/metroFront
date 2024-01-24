@@ -1,6 +1,5 @@
 <script setup>
 import {onMounted, ref} from "vue";
-import PassengerFlowOverTime from "@/App.vue";
 import AllSitesPassengerOverTime from "@/components/AllSitesPassengerOverTime.vue";
 import SitePassengerFlowRanks from "@/components/SitePassengerFlowRanks.vue";
 import LineIncomeRanks from "@/components/LineIncomeRanks.vue";
@@ -85,7 +84,7 @@ onMounted(() => {
                   <h1>14</h1>
                 </div>
                 <div class="card-info" style="margin-left: 5px;width: 28%;">
-                  <h5><img style="width: 8%" src=../assets/left.png> 运营线站点数</h5>
+                  <h5><img style="width: 8%" src="../assets/left.png"> 运营线站点数</h5>
                   <h1>313</h1>
                 </div>
                 <div class="card-info" style="margin-left: 5px;width: 40%;">
@@ -162,6 +161,7 @@ onMounted(() => {
 
 <style scoped>
 .body {
+
   display: flex;
   flex-direction: column;
   width: auto;
@@ -214,6 +214,8 @@ onMounted(() => {
 
 :deep(.el-input-group__append) {
   margin: 5px;
+  overflow: hidden;
+  width: 5vw;
   background: #ac9673;
   border-radius: 95px;
   color: white;
